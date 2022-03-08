@@ -38,4 +38,9 @@ public class MemoryMemberRepository implements MemberRepository {
         //.values() -> 저장된 모든 "값" 출력
         //new ArrayList<>(값) -> arraylist 초기 생성시부터 값 추가
     }
+
+    public void clearStore(){
+        store.clear(); // .clear() -> map의 모든 값 제거
+    }
+
 }
