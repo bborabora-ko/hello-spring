@@ -18,4 +18,23 @@ public class MemberController {
         this.memberService = memberService;
     }
 
+
+    /*
+    의존성 주입 3가지 방법
+    1. 필드 주입 -> 단점: 중간에 바꿀 수 있는 방법이 없음
+    @Autowired private MemberService memberService;
+
+    2. setter 주입 -> 단점: public이기 때문에 노출됨
+    @Autowired
+    public void setMemberService(MemberService memberService) {
+        this.memberService = memberService;
+    }
+
+    3. 생성자 주입(가장 추천) -> 조립시점에 만들어져서 끝내는것
+    @Autowired
+    public MemberController(MemberService memberService) {
+        this.memberService = memberService;
+    }
+    * */
+
 }

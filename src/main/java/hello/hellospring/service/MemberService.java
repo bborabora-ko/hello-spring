@@ -9,13 +9,10 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service
-//@Service 입력시 스프링이 올라올 때 스프링이 '서비스네?' 하고 스프링컨테이너에 스프링빈으로 등록
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
-    @Autowired
     public MemberService(MemberRepository memberRepository){
         this.memberRepository = memberRepository;
     }
